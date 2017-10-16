@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd 
+
+">
+
+<!-- START SNIPPET: xworkSample -->
+<struts>
+    <package name="default" extends="struts-default">
+    	<action name="search" class="lab2_1.Search">
+    		<result name="Success">/ShowBook.jsp</result>
+    		<result name="Failed">/NewAuthor.jsp</result>
+    	</action>
+    	<action name="ShowBook" class="lab2_1.Showbook">
+    		<result name="Success">/BookDetail.jsp</result>
+    		<result name="Failed">/ShowBook.jsp</result>
+    	</action>
+    	<action name="Delete" class="lab2_1.Delete">
+    		<result name="Success">/Home.jsp</result>
+    	</action>
+    	<action name="NewBook">
+    		<result>/NewBook.jsp</result>
+    	</action>
+    	<action name="NBbutton" class="lab2_1.NewBook">
+    		<result name="Success">/Home.jsp</result>
+    		<result name="Failed">/NewAuthor.jsp</result>
+    	</action>
+    	<action name="NAbutton" class="lab2_1.NewAuthor">
+    		<result name="Success">/NewBook.jsp</result>
+    	</action>
+    	<action name="Update">
+    		<result>/Update.jsp</result>
+    	</action>
+    	<action name="Upbutton" class="lab2_1.Update">
+    		<result name="Success">/Home.jsp</result>
+    	</action>
+    </package>
+</struts>
+
+<!-- END SNIPPET: xworkSample -->

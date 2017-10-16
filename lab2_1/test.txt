@@ -1,0 +1,34 @@
+insert [into] 表名 [(列名1, 列名2, 列名3, ...)] values (值1, 值2, 值3, ...);
+Book {ISBN (PK), Title, AuthorID (FK), Publisher, PublishDate, Price}
+Author {AuthorID (PK), Name, Age, Country} 不变
+insert into Book values("7544253996","百年孤独","G","南海出版公司","2011-6-1","39.5");
+insert into Author values("G","加西亚·马尔克斯","87","哥伦比亚");
+
+insert into Book values("7544270878","解忧杂货店","K","南海出版公司","2014-5-1","39.5");
+insert into Author values("K","东野圭吾","59","日本");
+
+insert into Book values("7544242516","白夜行","K","南海出版公司","2008-9-11","29.8");
+insert into Book values("7544241694","嫌疑人X的献身","K","南海出版公司","2008-9-1","28.0");
+insert into Book values("7544244428","恶意","K","南海出版公司","2009-6-1","18.0");
+
+insert into Author values("J","蒋方舟","28","中国");
+insert into Book values("7544244428","东京一年","J","南海出版公司","2017-8-1","68.0");
+insert into Book values("7510834158","故事的结局早已写在开头","J","九州出版社","2015-7-1","32.0");
+insert into Book values("7510834158","我承认我不曾经历沧桑","J","广西师范大学出版社","2013-10-1","12.0");
+
+insert into Author values("C","村上春树","68","日本");
+insert into Book values("7532725694","挪威的森林","C","上海译文出版社","2001-2-1","18.8");
+insert into Book values("7532734191","海边的卡夫卡","C","上海译文出版社","2003-4-1","25.0");
+insert into Book values("7544242820","当我跑步时我谈些什么","C","南海出版社","2009-1-1","25.0");
+
+delete from Author where AuthorID = "gs";
+delete from Author where AuthorID = "HX";
+delete from Author where AuthorID = "sd";
+delete from Author where AuthorID = "U";
+delete from Author where AuthorID = "wyz";
+delete from Author where AuthorID = "X";
+delete from Author where AuthorID = "XH";
+delete from Author where AuthorID = "xhxh";
+delete from Author where AuthorID = "xm";
+delete from Author where AuthorID = "Z";
+delete from Author where AuthorID = "zhd";
